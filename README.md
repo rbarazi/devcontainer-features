@@ -102,7 +102,7 @@ To test this feature locally before publishing:
 ```json
 {
   "features": {
-    "./src": {}
+    "./src/ai-npm-packages": {}
   }
 }
 ```
@@ -113,8 +113,9 @@ To test this feature locally before publishing:
 .
 ├── README.md
 ├── src/
-│   ├── devcontainer-feature.json
-│   └── install.sh
+│   └── ai-npm-packages/
+│       ├── devcontainer-feature.json
+│       └── install.sh
 └── .github/
     └── workflows/
         └── release.yml
