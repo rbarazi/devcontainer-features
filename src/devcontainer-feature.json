@@ -1,0 +1,19 @@
+{
+  "id": "ai-npm-packages",
+  "version": "1.0.0",
+  "name": "AI NPM Packages",
+  "description": "Installs OpenAI Codex and Anthropic Claude Code npm packages globally",
+  "options": {
+    "packages": {
+      "type": "string",
+      "default": "@anthropic-ai/claude-code @openai/codex",
+      "description": "Space-separated list of npm packages to install globally"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/node"
+  ],
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node": {}
+  }
+}
